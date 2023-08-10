@@ -5,6 +5,8 @@ set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++11")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+
 find_package(catkin REQUIRED COMPONENTS
     roscpp
     std_msgs
@@ -13,7 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
     camera_model
     )
 
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 3 REQUIRED)
 
 catkin_package()
 

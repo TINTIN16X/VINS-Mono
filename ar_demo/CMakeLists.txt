@@ -16,7 +16,9 @@ find_package(catkin REQUIRED COMPONENTS
   message_filters
   camera_model
 )
-find_package(OpenCV REQUIRED)
+
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+find_package(OpenCV 3 REQUIRED)
 
 catkin_package(
 

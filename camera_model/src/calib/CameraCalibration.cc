@@ -17,6 +17,10 @@
 #include "camodocal/gpl/EigenUtils.h"
 #include "camodocal/camera_models/CostFunctionFactory.h"
 
+#include<opencv2/imgproc/types_c.h>
+#include "opencv2/imgproc/imgproc_c.h"
+#include <opencv2/imgproc/imgproc_c.h>
+
 #include "ceres/ceres.h"
 namespace camodocal
 {
